@@ -20,6 +20,8 @@ def count_negative_atoms(smiles):
 
 # Interfaz de Streamlit
 st.title("Predictor de Efecto Caballo de Troya")
+st.write("Autor: Jesus Alvarado-Huayhuaz")
+
 st.write("""
 Esta aplicación toma un código SMILES como entrada y calcula la energía de afinidad de la molécula en el receptor FhuE de A. Baumannii.
 """)
