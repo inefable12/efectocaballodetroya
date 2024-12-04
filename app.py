@@ -19,10 +19,9 @@ def count_negative_atoms(smiles):
         return f"Error al procesar el SMILES: {e}"
 
 # Interfaz de Streamlit
-st.title("Página científica: Análisis de SMILES")
+st.title("Predictor de Efecto Caballo de Troya")
 st.write("""
-Esta aplicación toma un código SMILES como entrada y calcula el número de átomos
-con números de oxidación negativos en la molécula.
+Esta aplicación toma un código SMILES como entrada y calcula la energía de afinidad de la molécula en el receptor FhuE de A. Baumannii.
 """)
 
 # Entrada de SMILES
