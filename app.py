@@ -23,7 +23,7 @@ def count_atoms_with_chelation_potential(smiles):
                     # Los átomos con pares libres o disponibles pueden coordinar
                     chelation_atoms += 1
         #return f"Número de átomos con capacidad de quelar o formar enlaces dativos: {chelation_atoms}"
-        return f"Energía de afinidad (kcal/mol): {chelation_atoms}"
+        return f"Energía de afinidad (kcal/mol): {-1*chelation_atoms}"
     except Exception as e:
         return f"Error al procesar el SMILES: {e}"
 
