@@ -4,7 +4,7 @@ from rdkit import Chem
 
 def count_negative_atoms(smiles):
     """
-    Calcula el número de átomos con número de oxidación negativo en una molécula representada por SMILES.
+    A.
     """
     try:
         # Convierte el SMILES en un objeto mol
@@ -14,7 +14,7 @@ def count_negative_atoms(smiles):
         
         # Obtiene la lista de átomos y calcula los números de oxidación
         negative_atoms = sum(1 for atom in mol.GetAtoms() if atom.GetFormalCharge() < 0)
-        return f"Número de átomos con carga negativa: {negative_atoms}"
+        return f"Score: {negative_atoms}"
     except Exception as e:
         return f"Error al procesar el SMILES: {e}"
 
