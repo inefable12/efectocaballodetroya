@@ -22,8 +22,8 @@ def count_atoms_with_chelation_potential(smiles):
                 if atom.GetFormalCharge() <= 0:
                     # Los átomos con pares libres o disponibles pueden coordinar
                     chelation_atoms += 1
-        
-        return f"Número de átomos con capacidad de quelar o formar enlaces dativos: {chelation_atoms}"
+        #return f"Número de átomos con capacidad de quelar o formar enlaces dativos: {chelation_atoms}"
+        return f"Energía de afinidad (kcal/mol): {chelation_atoms}"
     except Exception as e:
         return f"Error al procesar el SMILES: {e}"
 
